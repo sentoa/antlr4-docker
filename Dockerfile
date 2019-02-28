@@ -3,7 +3,7 @@ MAINTAINER support@servon.eu
 RUN apt-get update
 RUN apt-get install -y wget
 RUN mkdir -p /usr/java
-RUN wget -O java.tar.gz http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jdk-8u40-linux-x64.tar.gz --header "Cookie: oraclelicense=accept-securebackup-cookie"
+RUN wget -O java.tar.gz https://download.oracle.com/otn-pub/java/jdk/8u201-b09/42970487e3af4f5aa5bca3f542482c60/jdk-8u201-linux-x64.tar.gz --header "Cookie: oraclelicense=accept-securebackup-cookie"
 RUN ls 
 RUN tar xfz java.tar.gz -C /usr/java
 ENV JAVA_HOME /usr/java/jdk1.8.0_40
